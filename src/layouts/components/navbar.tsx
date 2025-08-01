@@ -23,8 +23,8 @@ import {
   SearchIcon,
   TwitterIcon,
 } from '@/components/icons'
-import { ThemeSwitch } from '@/components/theme-switch'
 import { siteConfig } from '@/config/site'
+import { ThemeSwitch } from '@/layouts/components/theme-switch'
 
 export function Navbar() {
   const searchInput = (

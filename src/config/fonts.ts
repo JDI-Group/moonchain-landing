@@ -1,11 +1,27 @@
-import { Fira_Code as FontMono, Inter as FontSans } from 'next/font/google'
+import {
+  Barlow_Semi_Condensed as Barlow,
+  Fira_Code as Mono,
+  Inter as Sans,
+} from 'next/font/google'
 
-export const fontSans = FontSans({
+const sans = Sans({
   subsets: ['latin'],
   variable: '--font-sans',
 })
 
-export const fontMono = FontMono({
+const mono = Mono({
   subsets: ['latin'],
   variable: '--font-mono',
 })
+
+const barlow = Barlow({
+  subsets: ['latin'],
+  variable: '--font-barlow',
+  weight: ['100', '200', '300', '400', '600', '700', '900'],
+})
+
+export const fonts = {
+  sans,
+  mono,
+  barlow,
+}

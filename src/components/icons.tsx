@@ -1,8 +1,6 @@
-import type { IconSvgProps } from '@/types'
-
 import * as React from 'react'
 
-export const Logo: React.FC<IconSvgProps> = ({
+export const Logo: React.FC<any> = ({
   size = 36,
   height,
   ...props
@@ -23,7 +21,7 @@ export const Logo: React.FC<IconSvgProps> = ({
   </svg>
 )
 
-export const DiscordIcon: React.FC<IconSvgProps> = ({
+export const DiscordIcon: React.FC<any> = ({
   size = 24,
   width,
   height,
@@ -44,7 +42,7 @@ export const DiscordIcon: React.FC<IconSvgProps> = ({
   )
 }
 
-export const TwitterIcon: React.FC<IconSvgProps> = ({
+export const TwitterIcon: React.FC<any> = ({
   size = 24,
   width,
   height,
@@ -65,7 +63,7 @@ export const TwitterIcon: React.FC<IconSvgProps> = ({
   )
 }
 
-export const GithubIcon: React.FC<IconSvgProps> = ({
+export const GithubIcon: React.FC<any> = ({
   size = 24,
   width,
   height,
@@ -93,7 +91,7 @@ export function MoonFilledIcon({
   width,
   height,
   ...props
-}: IconSvgProps) {
+}: any) {
   return (
     <svg
       aria-hidden="true"
@@ -117,7 +115,7 @@ export function SunFilledIcon({
   width,
   height,
   ...props
-}: IconSvgProps) {
+}: any) {
   return (
     <svg
       aria-hidden="true"
@@ -141,7 +139,7 @@ export function HeartFilledIcon({
   width,
   height,
   ...props
-}: IconSvgProps) {
+}: any) {
   return (
     <svg
       aria-hidden="true"
@@ -163,7 +161,7 @@ export function HeartFilledIcon({
   )
 }
 
-export function SearchIcon(props: IconSvgProps) {
+export function SearchIcon(props: any) {
   return (
     <svg
       aria-hidden="true"

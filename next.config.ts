@@ -42,7 +42,6 @@ const nextConfig: NextConfig = {
           'src/ui/**',
           'src/hooks/**',
           'src/utils/**',
-          'src/apis/index.ts',
         ],
       }),
     )

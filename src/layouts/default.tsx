@@ -1,16 +1,13 @@
+import type { PropsWithChildren } from 'react'
+
 import { Link } from '@heroui/react'
+import { fonts } from '@/config/fonts'
+import { Navbar } from '@/layouts/components/navbar'
+import { Head } from './components/head'
 
-import { Navbar } from '@/components/navbar'
-
-import { Head } from './head'
-
-export default function DefaultLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+export default function DefaultLayout({ children }: PropsWithChildren) {
   return (
-    <div className="relative flex flex-col h-screen">
+    <div className={clsx('relative flex flex-col h-screen', fonts.barlow.className)}>
       <Head />
       <Navbar />
       <main className="container mx-auto max-w-7xl px-6 flex-grow pt-16">
