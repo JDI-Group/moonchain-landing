@@ -1,8 +1,16 @@
+import { If } from '@hairy/react-lib'
 import { Button } from '@heroui/react'
+import { AnimatePresence } from 'framer-motion'
+import { useWindowScroll } from 'react-use'
 import { Head } from '@/layouts/components/head'
 import { Navbar } from '@/layouts/components/navbar'
 
 export default function IndexPage() {
+  const scroll = useWindowScroll()
+
+  function onMouse() {
+    window.scrollTo({ top: document.body.clientHeight, behavior: 'smooth' })
+  }
   return (
     <layouts.default>
       <div className="h-screen relative flex flex-col">
@@ -36,9 +44,52 @@ export default function IndexPage() {
             </div>
           </div>
         </div>
+        <If cond={scroll.y < 100} tag={AnimatePresence}>
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.5 }}
+            className="absolute w-full flex justify-center bottom-20 z-10"
+          >
+            <Mouse className="cursor-pointer" onClick={onMouse} />
+          </motion.div>
+        </If>
       </div>
-      <div className="h-screen relative">
-
+      <div className="h-screen relative flex">
+        <div className="flex-1 -mr-[150px] flex justify-end items-center">
+          <div className="inline-flex flex-col">
+            <div className="text-8xl font-bold mb-4">
+              <p>INITIAL HARDWARE</p>
+              <p>OFFERING (IHO)</p>
+            </div>
+            <div className="text-2xl mb-10">
+              The Future of Hardware Mining is FREE!
+            </div>
+            <Button size="lg" className="w-[160px] border-[#F8FAFC] hover:border-primary hover:text-primary" radius="none" variant="bordered">
+              SEE DETails
+            </Button>
+          </div>
+        </div>
+        <div className="flex-1 py-20 flex items-center">
+          <div className="w-full">
+            <HomeFloatProjectsUnline />
+          </div>
+        </div>
+      </div>
+      <div className="container mx-auto flex flex-col justify-center items-center mb-[50px]">
+        <div className="text-5xl font-bold mb-[12px]">ECOSYSTEM</div>
+        <div className="text-xl text-center mb-[40px]">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </div>
+        <Button size="lg" className="w-[160px] border-[#F8FAFC] hover:border-primary hover:text-primary" radius="none" variant="bordered">
+          SEE DETails
+        </Button>
+      </div>
+      <div className="relative overflow-x-clip pt-24 pb-12">
+        <div className="w-[120%] h-[140px] transform rotate-[4deg] border-t-2 border-b-2 border-dashed border-primary bg-[rgba(210,241,89,0.20)]">
+        </div>
+        <div className="w-full h-[140px] bg-primary absolute top-0 bottom-0 m-auto"></div>
       </div>
     </layouts.default>
   )
