@@ -1,4 +1,5 @@
 import { heroui } from '@heroui/theme'
+import theme from './tailwind.theme'
 
 /** @type {import('tailwindcss').Config} */
 const config = {
@@ -60,7 +61,7 @@ const config = {
     },
   },
   darkMode: ['selector', '[data-theme="dark"]'],
-  plugins: [heroui()],
+  plugins: [heroui(theme)],
 }
 
 export default config

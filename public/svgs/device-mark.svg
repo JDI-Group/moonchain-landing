@@ -1,0 +1,18 @@
+<svg width="1059" height="865" viewBox="0 0 1059 865" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g opacity="0.7">
+<mask id="mask0_625_9751" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="110" y="-1" width="1037" height="824">
+<path d="M1146.73 672.011C1146.73 962.67 939.219 742.103 648.56 742.103C357.901 742.103 110 661.314 110 370.656C110 79.9971 458.089 -0.000244141 748.748 -0.000244141C1039.41 -0.000244141 1146.73 381.353 1146.73 672.011Z" fill="url(#paint0_radial_625_9751)"/>
+</mask>
+<g mask="url(#mask0_625_9751)">
+<rect y="16" width="1110" height="849" fill="url(#pattern0_625_9751)"/>
+</g>
+</g>
+<defs>
+<radialGradient id="paint0_radial_625_9751" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(645.124 411.375) rotate(157.96) scale(529.305 245.496)">
+<stop stop-color="#F63232"/>
+<stop offset="1" stop-color="#901D1D" stop-opacity="0"/>
+</radialGradient>
+<pattern id="pattern0_625_9751" patternUnits="userSpaceOnUse" viewBox="1365 -3455 44 44" width="0.99099101247014221%" height="1.2956419597666171%" patternContentUnits="objectBoundingBox">
+<rect x="1365" y="-3455" width="20" height="20" fill="#D2F159"/>
+</pattern></defs>
+</svg>

@@ -1,62 +1,82 @@
 export type SiteConfig = typeof siteConfig
 
+// Swap Info
+// NFT
+// MNS
+// Stable Coin
+// Mining
+// Disco Distro
+// Explorer
+// DepInscriptions
+// Airdrop
+const moreItems = [
+  {
+    label: 'Swap Info',
+    href: '/swap-info',
+  },
+  {
+    label: 'NFT',
+    href: '/nft',
+  },
+  {
+    label: 'Mining',
+    href: '/mining',
+  },
+  {
+    label: 'Disco Distro',
+    href: '/disco-distro',
+  },
+  {
+    label: 'Explorer',
+    href: '/explorer',
+  },
+  {
+    label: 'DepInscriptions',
+    href: '/dep-inscriptions',
+  },
+  {
+    label: 'Airdrop',
+    href: '/airdrop',
+  },
+]
+
 export const siteConfig = {
   name: 'Next.js + HeroUI',
   description: 'Make beautiful websites regardless of your design experience.',
   navItems: [
     {
-      label: 'Home',
+      label: 'IHO',
       href: '/',
     },
     {
-      label: 'Docs',
-      href: '/docs',
+      label: 'SWAP',
+      href: '/swap',
     },
     {
-      label: 'Pricing',
-      href: '/pricing',
+      label: 'BRIDGE',
+      href: '/bridge',
     },
     {
-      label: 'Blog',
-      href: '/blog',
-    },
-    {
-      label: 'About',
-      href: '/about',
+      label: 'MORE',
+      children: moreItems,
     },
   ],
   navMenuItems: [
     {
-      label: 'Profile',
-      href: '/profile',
+      label: 'IHO',
+      href: '/iho',
     },
     {
-      label: 'Dashboard',
-      href: '/dashboard',
+      label: 'SWAP',
+      href: '/swap',
     },
     {
-      label: 'Projects',
-      href: '/projects',
+      label: 'BRIDGE',
+      href: '/bridge',
     },
     {
-      label: 'Team',
-      href: '/team',
-    },
-    {
-      label: 'Calendar',
-      href: '/calendar',
-    },
-    {
-      label: 'Settings',
-      href: '/settings',
-    },
-    {
-      label: 'Help & Feedback',
-      href: '/help-feedback',
-    },
-    {
-      label: 'Logout',
-      href: '/logout',
+      label: 'MORE',
+      children: moreItems,
     },
   ],
   links: {
