@@ -1,6 +1,7 @@
 import { If } from '@hairy/react-lib'
 import { Button } from '@heroui/react'
 import { AnimatePresence } from 'framer-motion'
+import Marquee from 'react-fast-marquee'
 import { useWindowScroll } from 'react-use'
 import { Head } from '@/layouts/components/head'
 import { Navbar } from '@/layouts/components/navbar'
@@ -16,7 +17,7 @@ export default function IndexPage() {
       <div className="h-screen relative flex flex-col">
         <div className="absolute top-0 left-0 w-full h-full bg-[linear-gradient(to_bottom,_black_0%,_transparent_20%,_transparent_80%,_black_100%)] z-[1]" />
         <video src="/videos/home-video.mp4" autoPlay loop muted className="w-full h-full object-cover absolute top-0 left-0 z-0" />
-        <img src="/images/home-mark.png" alt="home-mark" className="w-full h-full object-cover absolute top-0 left-0" />
+        <img src="/images/home/mark.png" alt="home/mark" className="w-full h-full object-cover absolute top-0 left-0" />
         <div className="mx-auto container relative z-10">
           <Head />
           <Navbar />
@@ -87,9 +88,14 @@ export default function IndexPage() {
         </Button>
       </div>
       <div className="relative overflow-x-clip pt-24 pb-12">
-        <div className="w-[120%] h-[140px] transform rotate-[4deg] border-t-2 border-b-2 border-dashed border-primary bg-[rgba(210,241,89,0.20)]">
-        </div>
-        <div className="w-full h-[140px] bg-primary absolute top-0 bottom-0 m-auto"></div>
+        <Marquee className="transform rotate-[4deg]">
+          <div className="w-[120vw] h-[140px]  border-t-2 border-b-2 border-dashed border-primary bg-[rgba(210,241,89,0.20)]" />
+        </Marquee>
+        <Marquee className="absolute! top-0 bottom-0 m-auto bg-primary h-[140px]" direction="right">
+          <div className="w-[120vw] h-[140px]">
+
+          </div>
+        </Marquee>
       </div>
     </layouts.default>
   )
