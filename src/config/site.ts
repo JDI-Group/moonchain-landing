@@ -12,31 +12,31 @@ export type SiteConfig = typeof siteConfig
 const moreItems = [
   {
     label: 'Swap Info',
-    href: '/swap-info',
+    href: 'https://swap-info.moonchain.com/',
   },
   {
     label: 'NFT',
-    href: '/nft',
+    href: 'https://nft.moonchain.com/',
   },
   {
     label: 'Mining',
-    href: '/mining',
+    href: 'https://miningv2.matchx.io/',
   },
   {
     label: 'Disco Distro',
-    href: '/disco-distro',
+    href: 'https://discodistro.vercel.app/',
   },
   {
     label: 'Explorer',
-    href: '/explorer',
+    href: 'https://explorer.moonchain.com/',
   },
   {
     label: 'DepInscriptions',
-    href: '/dep-inscriptions',
+    href: 'https://depinscriptions.moonchain.com/',
   },
   {
     label: 'Airdrop',
-    href: '/airdrop',
+    href: 'https://airdrop.moonchain.com/',
   },
 ]
 
@@ -50,11 +50,11 @@ export const siteConfig = {
     },
     {
       label: 'SWAP',
-      href: '/swap',
+      href: 'https://swap.moonchain.com/',
     },
     {
       label: 'BRIDGE',
-      href: '/bridge',
+      href: 'https://jannowitz.moonchain.com/',
     },
     {
       label: 'MORE',
@@ -64,15 +64,15 @@ export const siteConfig = {
   navMenuItems: [
     {
       label: 'IHO',
-      href: '/iho',
+      href: '/',
     },
     {
       label: 'SWAP',
-      href: '/swap',
+      href: 'https://swap.moonchain.com/',
     },
     {
       label: 'BRIDGE',
-      href: '/bridge',
+      href: 'https://jannowitz.moonchain.com/',
     },
     {
       label: 'MORE',

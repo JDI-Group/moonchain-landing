@@ -15,38 +15,64 @@ import NextLink from 'next/link'
 import { siteConfig } from '@/config/site'
 
 export function Navbar() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const router = useRouter()
+
+  function renderMenuItem(item: any, index: number) {
+    return (
+      <NavbarMenuItem className="py-3 leading-0" key={`${item}-${index}`}>
+        <Link
+          color={router.pathname === item.href ? 'primary' : 'foreground'}
+          href={item.href}
+        >
+          {item.label}
+        </Link>
+      </NavbarMenuItem>
+    )
+  }
+  function renderNavItem(item: any, index: number) {
+    return (
+      <NavbarItem key={index}>
+        <NextLink
+          className={clsx(
+            linkStyles({ color: 'foreground' }),
+            'data-[active=true]:text-primary data-[active=true]:font-medium',
+          )}
+          color="foreground"
+          href={item.href || ''}
+        >
+          {item.label}
+        </NextLink>
+      </NavbarItem>
+    )
+  }
+
   return (
-    <HeroUINavbar maxWidth="full" position="static" className="md:bg-transparent backdrop-saturate-150  backdrop-blur-none">
+    <HeroUINavbar
+      className={clsx('transition-colors duration-800 bg-transparent backdrop-blur-none', isMenuOpen && 'bg-black')}
+      classNames={{ wrapper: 'px-0' }}
+      maxWidth="full"
+      position="static"
+    >
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
         <NavbarBrand className="gap-3 max-w-fit">
           <NextLink className="flex justify-start items-center gap-1" href="/">
-            <p className="font-bold font-spacex">MOONCHAIN</p>
+            <p className="font-bold font-spacex hidden lg:inline">MOONCHAIN</p>
+            <img src="/svgs/logo.svg" className="w-8 h-8 lg:hidden" />
           </NextLink>
         </NavbarBrand>
       </NavbarContent>
+
       <NavbarContent className="basis-1/5 sm:basis-full" justify="center">
         <div className="hidden lg:flex gap-4 justify-start ml-2">
-          {siteConfig.navItems.map(item => (
-            <NavbarItem key={item.href}>
-              <NextLink
-                className={clsx(
-                  linkStyles({ color: 'foreground' }),
-                  'data-[active=true]:text-primary data-[active=true]:font-medium',
-                )}
-                color="foreground"
-                href=""
-              >
-                {item.label}
-              </NextLink>
-            </NavbarItem>
-          ))}
+          {siteConfig.navItems.map((item, index) => item.children
+            ? renderNavItem(item, index)
+            : renderNavItem(item, index),
+          )}
         </div>
       </NavbarContent>
 
-      <NavbarContent
-        className="hidden sm:flex basis-1/5 sm:basis-full"
-        justify="end"
-      >
+      <NavbarContent className="hidden lg:flex basis-1/5 sm:basis-full" justify="end">
         <NavbarItem className="hidden md:flex gap-2">
           <Button className="w-[120px] border-[#F8FAFC] hover:border-primary hover:text-primary" radius="none" variant="bordered">
             Wallet
@@ -57,28 +83,20 @@ export function Navbar() {
         </NavbarItem>
       </NavbarContent>
 
-      <NavbarContent className="sm:hidden basis-1 pl-4" justify="end">
-        <NavbarMenuToggle />
+      <NavbarContent className="lg:hidden basis-1 pl-4" justify="end">
+        <NavbarMenuToggle onChange={setIsMenuOpen} />
       </NavbarContent>
 
-      <NavbarMenu>
-        <div className="mx-4 mt-2 flex flex-col gap-2">
+      <NavbarMenu className="bg-black px-0">
+        <div className="mx-5 pt-2 border-t border-white/30 flex flex-col">
           {siteConfig.navMenuItems.map((item, index) => (
-            <NavbarMenuItem key={`${item}-${index}`}>
-              <Link
-                color={
-                  index === 2
-                    ? 'primary'
-                    : index === siteConfig.navMenuItems.length - 1
-                      ? 'danger'
-                      : 'foreground'
-                }
-                href="#"
-                size="lg"
-              >
-                {item.label}
-              </Link>
-            </NavbarMenuItem>
+            item.children
+              ? (
+                  <div className="border-t border-white/30 mt-[10px] pt-[10px]" key={`${item}-${index}`}>
+                    {item.children.map(renderMenuItem)}
+                  </div>
+                )
+              : renderMenuItem(item, index)
           ))}
         </div>
       </NavbarMenu>

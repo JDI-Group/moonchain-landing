@@ -1,4 +1,4 @@
-import { If } from '@hairy/react-lib'
+import { If, useStore } from '@hairy/react-lib'
 import { Button } from '@heroui/react'
 import { AnimatePresence } from 'framer-motion'
 import Marquee from 'react-fast-marquee'
@@ -8,12 +8,14 @@ import { Navbar } from '@/layouts/components/navbar'
 
 export default function IndexPage() {
   const scroll = useWindowScroll()
-
-  function onMouse() {
+  const router = useRouter()
+  const config = useStore(store.config)
+  const ecosystem = config.ecosystem.flatMap(item => item.items.map(item => item.icon))
+  async function onMouse() {
     window.scrollTo({ top: document.body.clientHeight, behavior: 'smooth' })
   }
   return (
-    <layouts.default>
+    <layouts.home>
       <div className="h-screen relative flex flex-col">
         <div className="absolute top-0 left-0 w-full h-full bg-[linear-gradient(to_bottom,_black_0%,_transparent_20%,_transparent_80%,_black_100%)] z-[1]" />
         <video src="/videos/home-video.mp4" autoPlay loop muted className="w-full h-full object-cover absolute top-0 left-0 z-0" />
@@ -83,7 +85,13 @@ export default function IndexPage() {
         <div className="text-xl text-center mb-[40px]">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
         </div>
-        <Button size="lg" className="w-[160px] border-[#F8FAFC] hover:border-primary hover:text-primary" radius="none" variant="bordered">
+        <Button
+          onPress={() => router.push('/ecosystem')}
+          size="lg"
+          className="w-[160px] border-[#F8FAFC] hover:border-primary hover:text-primary"
+          radius="none"
+          variant="bordered"
+        >
           SEE DETails
         </Button>
       </div>
@@ -92,11 +100,13 @@ export default function IndexPage() {
           <div className="w-[120vw] h-[140px]  border-t-2 border-b-2 border-dashed border-primary bg-[rgba(210,241,89,0.20)]" />
         </Marquee>
         <Marquee className="absolute! top-0 bottom-0 m-auto bg-primary h-[140px]" direction="right">
-          <div className="w-[120vw] h-[140px]">
-
+          <div className="min-w-screen flex justify-between gap-4 pr-[max(1vw,16px)]">
+            {ecosystem.map(item => (
+              <img src={item} key={item} alt="ecosystem" className="w-[72px] h-[72px]" />
+            ))}
           </div>
         </Marquee>
       </div>
-    </layouts.default>
+    </layouts.home>
   )
 }

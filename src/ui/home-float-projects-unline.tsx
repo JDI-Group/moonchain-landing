@@ -31,12 +31,12 @@ export function HomeFloatProjectsUnline(props: PropsWithDetailedHTML) {
           <pattern id="pattern3_4582_147581" patternContentUnits="objectBoundingBox" width="1" height="1"><use xlinkHref="#image3_4582_147581" transform="scale(0.00200401)"></use></pattern>
           <pattern id="pattern4_4582_14751" patternContentUnits="objectBoundingBox" width="1" height="1"><use xlinkHref="#image4_4582_147581" transform="scale(0.00200401)"></use></pattern>
           <pattern id="pattern5_4582_147581" patternContentUnits="objectBoundingBox" width="1" height="1"><use xlinkHref="#image5_4582_147581" transform="scale(0.002)"></use></pattern>
-          <image id="image0_4582_147581" width="986" height="555" preserveAspectRatio="none" xlinkHref="/images/float.phone.png"></image>
-          <image id="image1_4582_147581" width="360" height="360" preserveAspectRatio="none" xlinkHref="/images/float.device.watch.png"></image>
-          <image id="image2_4582_147581" width="500" height="500" preserveAspectRatio="none" xlinkHref="/images/float.device.camera.png"></image>
-          <image id="image3_4582_147581" width="499" height="499" preserveAspectRatio="none" xlinkHref="/images/float.device.ring.png"></image>
-          <image id="image4_4582_147581" width="499" height="499" preserveAspectRatio="none" xlinkHref="/images/float.device.projection.png"></image>
-          <image id="image5_4582_147581" width="500" height="500" preserveAspectRatio="none" xlinkHref="/images/float.device.speaker.png"></image>
+          <image id="image0_4582_147581" width="986" height="555" preserveAspectRatio="none" xlinkHref="/images/home/float.phone.png"></image>
+          <image id="image1_4582_147581" width="360" height="360" preserveAspectRatio="none" xlinkHref="/images/home/float.device.watch.png"></image>
+          <image id="image2_4582_147581" width="500" height="500" preserveAspectRatio="none" xlinkHref="/images/home/float.device.camera.png"></image>
+          <image id="image3_4582_147581" width="499" height="499" preserveAspectRatio="none" xlinkHref="/images/home/float.device.ring.png"></image>
+          <image id="image4_4582_147581" width="499" height="499" preserveAspectRatio="none" xlinkHref="/images/home/float.device.projection.png"></image>
+          <image id="image5_4582_147581" width="500" height="500" preserveAspectRatio="none" xlinkHref="/images/home/float.device.speaker.png"></image>
         </defs>
       </svg>
     </div>

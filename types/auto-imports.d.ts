@@ -27,6 +27,7 @@ declare global {
   const memo: typeof import('react')['memo']
   const motion: typeof import('framer-motion')['motion']
   const startTransition: typeof import('react')['startTransition']
+  const store: typeof import('../src/store/index')['default']
   const subtitle: typeof import('../src/components/primitives')['subtitle']
   const title: typeof import('../src/components/primitives')['title']
   const useCallback: typeof import('react')['useCallback']

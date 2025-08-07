@@ -1,0 +1,170 @@
+[
+  {
+    "title": "DePIN",
+    "description": "Making hardware great again!",
+    "items": [
+      {
+        "title": "Oyster Labs",
+        "description": "Selling Web3 phones",
+        "icon": "/images/ecosystem/oyster-labs.png",
+        "link": "https://x.com/oysterecosystem"
+      },
+      {
+        "title": "Tailz",
+        "description": "Web3 DePIN Pet trackers",
+        "icon": "/images/ecosystem/tailz.png",
+        "link": "https://x.com/tailz_xyz"
+      },
+      {
+        "title": "DID Phone",
+        "description": "Delivery guy's first Web3 phone",
+        "icon": "/images/ecosystem/did-phone.png",
+        "link": "https://x.com/DidDiscovery"
+      },
+      {
+        "title": "Coral Phone",
+        "description": "DePIN phones at hands",
+        "icon": "/images/ecosystem/coral-phone.png",
+        "link": "https://x.com/MyCoralApp"
+      },
+      {
+        "title": "APhone",
+        "description": "Decentralized Could Smart Phone",
+        "icon": "/images/ecosystem/a-phone.png",
+        "link": "https://x.com/aphonelabs"
+      },
+      {
+        "title": "Blueberry Ring",
+        "description": "Lord of Web3 Ring",
+        "icon": "/images/ecosystem/blueberry-ring.png",
+        "link": "https://x.com/BlueberryRing"
+      },
+      {
+        "title": "IoTeX",
+        "description": "DePin Layer1",
+        "icon": "/images/ecosystem/iotex.png",
+        "link": "https://x.com/iotex_io"
+      },
+      {
+        "title": "Drife",
+        "description": "Web3 Uber",
+        "icon": "/images/ecosystem/drife.png",
+        "link": "https://x.com/Drife_official"
+      },
+      {
+        "title": "Airo Networks",
+        "description": "Worlds largest Air Quality Network",
+        "icon": "/images/ecosystem/airo-networks.png",
+        "link": "https://x.com/airosystems"
+      },
+      {
+        "title": "WatchX Network",
+        "description": "Worlds largest Air Quality Network",
+        "icon": "/images/ecosystem/watchx-network.png",
+        "link": "https://x.com/watchxnetwork"
+      },
+      {
+        "title": "CyberCharge",
+        "description": "Next-Gen Global Power Matching Protocol",
+        "icon": "/images/ecosystem/cyber-charge.png",
+        "link": "https://x.com/CyberChargeWeb3"
+      },
+      {
+        "title": "Chargepal",
+        "description": "The First-ever Decentralized Power Bank protocol",
+        "icon": "/images/ecosystem/chargepal.png",
+        "link": "https://x.com/Chargepalweb3"
+      }
+    ]
+  },
+  {
+    "title": "VC",
+    "description": "DePIN focused Venture Capitals",
+    "items": [
+      {
+        "title": "JDI",
+        "description": "The largest investor behind Dimo and Helium",
+        "icon": "/images/ecosystem/jdi.png",
+        "link": "https://x.com/Global_JDI"
+      },
+      {
+        "title": "Candaq",
+        "description": "Started from 2012, invested in a lot of DePIN projects",
+        "icon": "/images/ecosystem/candaq.png",
+        "link": "https://x.com/CandaqCom"
+      }
+    ]
+  },
+  {
+    "title": "Infrastructure",
+    "description": "DePIN infrastructure",
+    "items": [
+      {
+        "title": "Drop Wireless",
+        "description": "Wireless networks for DePIN",
+        "icon": "/images/ecosystem/drop-wireless.png",
+        "link": "https://x.com/dropwireless"
+      },
+      {
+        "title": "Dekube Network",
+        "description": "Build The World's Largest Distributed AI Computing Network",
+        "icon": "/images/ecosystem/dekube-network.png",
+        "link": "https://x.com/dekube_official"
+      },
+      {
+        "title": "Kaisar Network",
+        "description": "The leading GPU-as-a-service protocol",
+        "icon": "/images/ecosystem/kaisar-network.png",
+        "link": "https://x.com/KaisarNetwork"
+      }
+    ]
+  },
+  {
+    "title": "RWA",
+    "description": "Real World Assets",
+    "items": [
+      {
+        "title": "Rewards Bunny",
+        "description": "Platforms for the RWA",
+        "icon": "/images/ecosystem/rewards-bunny.png",
+        "link": "https://x.com/rewardsbunny"
+      }
+    ]
+  },
+  {
+    "title": "Data/Tooling",
+    "description": "DePIN data tools",
+    "items": [
+      {
+        "title": "Public AI",
+        "description": "AI for DePIN",
+        "icon": "/images/ecosystem/public-ai.png",
+        "link": "https://x.comAI_"
+      }
+    ]
+  },
+  {
+    "title": "Launchpad",
+    "description": "DePIN launch platforms",
+    "items": [
+      {
+        "title": "UXUY",
+        "description": "Web3 DePIN launchpad and wallet",
+        "icon": "/images/ecosystem/uxuy.png",
+        "link": "https://x.com/uxuycom"
+      }
+    ]
+  },
+  {
+    "title": "Exchange",
+    "description": "Partner Moonchain Exchanges",
+    "items": [
+      {
+        "title": "Bitget Global",
+        "description": "World's leading cryptocurrency exchange and web3 company",
+        "icon": "/images/ecosystem/bitget-global.png",
+        "link": "https://x.com/bitgetglobal"
+      }
+    ]
+  }
+]
