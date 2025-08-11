@@ -1,4 +1,5 @@
 import { If, useStore } from '@hairy/react-lib'
+import { redirectTo } from '@hairy/utils'
 import { Button } from '@heroui/react'
 import { AnimatePresence } from 'framer-motion'
 import Marquee from 'react-fast-marquee'
@@ -35,13 +36,31 @@ export default function IndexPage() {
               <p>HARDWARE CHAIN</p>
             </div>
             <div className="flex gap-3">
-              <Button size="lg" className="flex-1 lg:w-[120px]" radius="none" color="primary">
+              <Button
+                size="lg"
+                className="flex-1 lg:w-[120px]"
+                radius="none"
+                color="primary"
+                onPress={() => redirectTo('https://github.com/JDI-Group')}
+              >
                 Github
               </Button>
-              <Button size="lg" className="flex-1 lg:w-[120px] border-[#F8FAFC] hover:border-primary hover:text-primary" radius="none" variant="bordered">
+              <Button
+                size="lg"
+                className="flex-1 lg:w-[120px] border-[#F8FAFC] hover:border-primary hover:text-primary"
+                radius="none"
+                variant="bordered"
+                onPress={() => redirectTo('https://doc.moonchain.com/')}
+              >
                 Docs
               </Button>
-              <Button size="lg" className="flex-1 lg:w-[120px] border-[#F8FAFC] hover:border-primary hover:text-primary" radius="none" variant="bordered">
+              <Button
+                size="lg"
+                className="flex-1 lg:w-[120px] border-[#F8FAFC] hover:border-primary hover:text-primary"
+                radius="none"
+                variant="bordered"
+                onPress={() => redirectTo('https://mxc1usd.com/')}
+              >
                 Wallet
               </Button>
             </div>
@@ -69,8 +88,13 @@ export default function IndexPage() {
             <div className="text-xl md:text-2xl mb-8 md:mb-10">
               The Future of Hardware Mining is FREE!
             </div>
-            <Button size="lg" className="w-[160px] border-[#F8FAFC] hover:border-primary hover:text-primary" radius="none" variant="bordered">
-              SEE DETails
+            <Button
+              className="w-[160px] border-[#F8FAFC] hover:border-primary hover:text-primary"
+              size="lg"
+              variant="bordered"
+              radius="none"
+            >
+              See Details
             </Button>
           </div>
         </div>
@@ -92,7 +116,7 @@ export default function IndexPage() {
           radius="none"
           variant="bordered"
         >
-          SEE DETails
+          See Details
         </Button>
       </div>
       <div className="relative overflow-x-clip pt-24 pb-12">
