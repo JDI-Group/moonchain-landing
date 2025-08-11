@@ -24,24 +24,24 @@ export default function IndexPage() {
           <Head />
           <Navbar />
         </div>
-        <div className="flex-1 flex items-center container mx-auto">
+        <div className="px-6 lg:px-0 flex-1 flex items-end pb-[20vh] lg:items-center container mx-auto">
           <div className="flex flex-col z-10 relative">
-            <div className="text-4xl mb-4">
+            <div className="text-lg lg:text-4xl mb-4">
               <span className="font-spacex">MOONCHAIN</span>
-              <span className="text-2xl"> | Ethereum 3.0</span>
+              <span className="text-sm lg:text-2xl"> | Ethereum 3.0</span>
             </div>
-            <div className="text-8xl font-bold mb-10">
+            <div className="text-5xl lg:text-8xl font-bold mb-10">
               <p>ETHEREUM’S FIRST</p>
               <p>HARDWARE CHAIN</p>
             </div>
             <div className="flex gap-3">
-              <Button size="lg" className="w-[120px]" radius="none" color="primary">
+              <Button size="lg" className="flex-1 lg:w-[120px]" radius="none" color="primary">
                 Github
               </Button>
-              <Button size="lg" className="w-[120px] border-[#F8FAFC] hover:border-primary hover:text-primary" radius="none" variant="bordered">
+              <Button size="lg" className="flex-1 lg:w-[120px] border-[#F8FAFC] hover:border-primary hover:text-primary" radius="none" variant="bordered">
                 Docs
               </Button>
-              <Button size="lg" className="w-[120px] border-[#F8FAFC] hover:border-primary hover:text-primary" radius="none" variant="bordered">
+              <Button size="lg" className="flex-1 lg:w-[120px] border-[#F8FAFC] hover:border-primary hover:text-primary" radius="none" variant="bordered">
                 Wallet
               </Button>
             </div>
@@ -59,14 +59,14 @@ export default function IndexPage() {
           </motion.div>
         </If>
       </div>
-      <div className="h-screen relative flex">
-        <div className="flex-1 -mr-[150px] flex justify-end items-center">
+      <div className="h-screen relative flex flex-col justify-center md:justify-start md:flex-row px-6 lg:px-0">
+        <div className="flex md:flex-1 xl:-mr-[150px] lg:justify-end items-center">
           <div className="inline-flex flex-col">
-            <div className="text-8xl font-bold mb-4">
+            <div className="text-4xl  xxl:text-8xl font-bold mb-4">
               <p>INITIAL HARDWARE</p>
               <p>OFFERING (IHO)</p>
             </div>
-            <div className="text-2xl mb-10">
+            <div className="text-xl md:text-2xl mb-8 md:mb-10">
               The Future of Hardware Mining is FREE!
             </div>
             <Button size="lg" className="w-[160px] border-[#F8FAFC] hover:border-primary hover:text-primary" radius="none" variant="bordered">
@@ -74,7 +74,7 @@ export default function IndexPage() {
             </Button>
           </div>
         </div>
-        <div className="flex-1 py-20 flex items-center">
+        <div className="md:flex-1 md:py-20 flex items-center">
           <div className="w-full">
             <HomeFloatProjectsUnline />
           </div>

@@ -49,16 +49,16 @@ export function Navbar() {
 
   return (
     <HeroUINavbar
-      className={clsx('transition-colors duration-800 bg-transparent backdrop-blur-none', isMenuOpen && 'bg-black')}
+      className={clsx('px-6 lg:px-0 transition-colors duration-800 bg-transparent backdrop-blur-none', isMenuOpen && 'bg-black')}
       classNames={{ wrapper: 'px-0' }}
       maxWidth="full"
       position="static"
     >
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
         <NavbarBrand className="gap-3 max-w-fit">
-          <NextLink className="flex justify-start items-center gap-1" href="/">
-            <p className="font-bold font-spacex hidden lg:inline">MOONCHAIN</p>
-            <img src="/svgs/logo.svg" className="w-8 h-8 lg:hidden" />
+          <NextLink className="flex justify-start items-center gap-3" href="/">
+            <img src="/images/logo.png" className="w-8 h-8 inline! flex-shrink-0" />
+            <p className="font-bold font-spacex hidden lg:block">MOONCHAIN</p>
           </NextLink>
         </NavbarBrand>
       </NavbarContent>

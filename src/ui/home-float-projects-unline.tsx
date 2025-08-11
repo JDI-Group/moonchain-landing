@@ -11,7 +11,7 @@ export function HomeFloatProjectsUnline(props: PropsWithDetailedHTML) {
         backgroundRepeat: 'no-repeat',
       }}
       className={clsx(
-        'relative px-[20%]',
+        'relative md:px-[10%] xl:px-[20%]',
         'bg-cover',
         props.className,
       )}
