@@ -25,20 +25,21 @@ export default function IndexPage() {
           <Head />
           <Navbar />
         </div>
-        <div className="px-6 lg:px-0 flex-1 flex items-end pb-[20vh] lg:items-center container mx-auto">
+        <div className="px-6 lg:px-0 flex-1 flex items-end pb-[20vh] lg:pb-[30vh] container mx-auto">
           <div className="flex flex-col z-10 relative">
-            <div className="text-lg lg:text-4xl mb-4">
-              <span className="font-spacex">MOONCHAIN</span>
-              <span className="text-sm lg:text-2xl"> | Ethereum 3.0</span>
+            <div className="mb-4">
+              <span className="text-lg lg:text-xl font-spacex">MOONCHAIN</span>
+              <span className="mx-4 text-sm lg:text-xl">|</span>
+              <span className="text-sm">Ethereum 3.0</span>
             </div>
-            <div className="text-5xl lg:text-8xl font-bold mb-10">
+            <div className="text-5xl lg:text-[5rem] font-bold mb-10">
               <p>ETHEREUM’S FIRST</p>
               <p>HARDWARE CHAIN</p>
             </div>
             <div className="flex gap-3">
               <Button
                 size="lg"
-                className="flex-1 lg:w-[120px]"
+                className="flex-1 lg:flex-none lg:w-[120px]"
                 radius="none"
                 color="primary"
                 onPress={() => redirectTo('https://github.com/JDI-Group')}
@@ -47,7 +48,7 @@ export default function IndexPage() {
               </Button>
               <Button
                 size="lg"
-                className="flex-1 lg:w-[120px] border-[#F8FAFC] hover:border-primary hover:text-primary"
+                className="flex-1 lg:flex-none lg:w-[120px] border-[#F8FAFC] hover:border-primary hover:text-primary"
                 radius="none"
                 variant="bordered"
                 onPress={() => redirectTo('https://doc.moonchain.com/')}
@@ -56,7 +57,7 @@ export default function IndexPage() {
               </Button>
               <Button
                 size="lg"
-                className="flex-1 lg:w-[120px] border-[#F8FAFC] hover:border-primary hover:text-primary"
+                className="flex-1 lg:flex-none lg:w-[120px] border-[#F8FAFC] hover:border-primary hover:text-primary"
                 radius="none"
                 variant="bordered"
                 onPress={() => redirectTo('https://mxc1usd.com/')}
@@ -79,9 +80,9 @@ export default function IndexPage() {
         </If>
       </div>
       <div className="h-screen relative flex flex-col justify-center md:justify-start md:flex-row px-6 lg:px-0">
-        <div className="flex md:flex-1 xl:-mr-[150px] lg:justify-end items-center">
+        <div className="flex md:flex-1 lg:justify-end items-center">
           <div className="inline-flex flex-col">
-            <div className="text-4xl  xxl:text-8xl font-bold mb-4">
+            <div className="text-4xl xxl:text-7xl font-bold mb-4">
               <p>INITIAL HARDWARE</p>
               <p>OFFERING (IHO)</p>
             </div>
@@ -98,7 +99,7 @@ export default function IndexPage() {
             </Button>
           </div>
         </div>
-        <div className="md:flex-1 md:py-20 flex items-center">
+        <div className="md:flex-1 md:py-20 flex items-center lg:mr-40">
           <div className="w-full">
             <HomeFloatProjectsUnline />
           </div>
@@ -110,21 +111,21 @@ export default function IndexPage() {
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
         </div>
         <Button
-          onPress={() => router.push('/ecosystem')}
-          size="lg"
           className="w-[160px] border-[#F8FAFC] hover:border-primary hover:text-primary"
-          radius="none"
+          onPress={() => router.push('/ecosystem')}
           variant="bordered"
+          radius="none"
+          size="lg"
         >
           See Details
         </Button>
       </div>
-      <div className="relative overflow-x-clip pt-24 pb-12">
-        <Marquee className="transform rotate-[4deg]">
+      <div className="relative overflow-x-clip pt-24 pb-24">
+        <Marquee className="transform rotate-[4deg]" direction="right">
           <div className="w-[120vw] h-[140px]  border-t-2 border-b-2 border-dashed border-primary bg-[rgba(210,241,89,0.20)]" />
         </Marquee>
-        <Marquee className="absolute! top-0 bottom-0 m-auto bg-primary h-[140px]" direction="right">
-          <div className="min-w-screen flex justify-between gap-4 pr-[max(1vw,16px)]">
+        <Marquee className="absolute! top-0 bottom-0 m-auto bg-primary h-[140px]">
+          <div className="min-w-screen flex justify-between gap-14 pr-[max(1vw,24px)]">
             {ecosystem.map(item => (
               <img src={item} key={item} alt="ecosystem" className="w-[72px] h-[72px]" />
             ))}

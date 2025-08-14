@@ -1,3 +1,4 @@
+import { redirectTo } from '@hairy/utils'
 import {
   Button,
   Navbar as HeroUINavbar,
@@ -49,7 +50,7 @@ export function Navbar() {
 
   return (
     <HeroUINavbar
-      className={clsx('px-6 lg:px-0 transition-colors duration-800 bg-transparent backdrop-blur-none', isMenuOpen && 'bg-black')}
+      className={clsx('px-6 lg:px-0 transition-colors duration-800 bg-transparent backdrop-blur-none lg:h-[100px]', isMenuOpen && 'bg-black')}
       classNames={{ wrapper: 'px-0' }}
       maxWidth="full"
       position="static"
@@ -88,7 +89,7 @@ export function Navbar() {
       </NavbarContent>
 
       <NavbarMenu className="bg-black px-0">
-        <div className="mx-5 pt-2 border-t border-white/30 flex flex-col">
+        <div className="mx-5 pt-2 border-t border-white/30 flex flex-col flex-1">
           {siteConfig.navMenuItems.map((item, index) => (
             item.children
               ? (
@@ -98,6 +99,26 @@ export function Navbar() {
                 )
               : renderMenuItem(item, index)
           ))}
+        </div>
+        <div className="mx-5 mb-8 flex gap-[10px]">
+          <Button
+            size="lg"
+            className="flex-1 lg:flex-none lg:w-[120px]"
+            radius="none"
+            color="primary"
+            onPress={() => redirectTo('https://github.com/JDI-Group')}
+          >
+            Github
+          </Button>
+          <Button
+            size="lg"
+            className="flex-1 border-[#F8FAFC] hover:border-primary hover:text-primary"
+            radius="none"
+            variant="bordered"
+            onPress={() => redirectTo('https://doc.moonchain.com/')}
+          >
+            Docs
+          </Button>
         </div>
       </NavbarMenu>
     </HeroUINavbar>
