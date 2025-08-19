@@ -115,7 +115,7 @@ export function Navbar() {
             className="flex-1 border-[#F8FAFC] hover:border-primary hover:text-primary"
             radius="none"
             variant="bordered"
-            onPress={() => redirectTo('https://doc.moonchain.com/')}
+            onPress={() => redirectTo('https://docs.mchain.ai/')}
           >
             Docs
           </Button>

@@ -51,7 +51,7 @@ export default function IndexPage() {
                 className="flex-1 lg:flex-none lg:w-[120px] border-[#F8FAFC] hover:border-primary hover:text-primary"
                 radius="none"
                 variant="bordered"
-                onPress={() => redirectTo('https://doc.moonchain.com/')}
+                onPress={() => redirectTo('https://docs.mchain.ai/')}
               >
                 Docs
               </Button>
@@ -108,7 +108,7 @@ export default function IndexPage() {
       <div className="container mx-auto flex flex-col justify-center items-center mb-[50px]">
         <div className="text-5xl font-bold mb-[12px]">ECOSYSTEM</div>
         <div className="text-xl text-center mb-[40px]">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Welcome to the Moonchain Ecosystem.A growing universe of partners, builders, and innovators.Together, we are building the unified future of decentralized AI.
         </div>
         <Button
           className="w-[160px] border-[#F8FAFC] hover:border-primary hover:text-primary"
