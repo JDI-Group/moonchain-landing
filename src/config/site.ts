@@ -41,8 +41,8 @@ const moreItems = [
 ]
 
 export const siteConfig = {
-  name: 'Next.js + HeroUI',
-  description: 'Make beautiful websites regardless of your design experience.',
+  name: `Moonchain, Ethereum's 1st Hardware Chain`,
+  description: 'Moonchain | Ethereum 3.0: Ethereum’s 1st Hardware Chain',
   navItems: [
     {
       label: 'IHO',
