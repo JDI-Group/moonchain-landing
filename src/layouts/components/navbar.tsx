@@ -66,7 +66,7 @@ export function Navbar() {
 
       <NavbarContent className="basis-1/5 sm:basis-full" justify="center">
         <div className="hidden lg:flex gap-4 justify-start ml-2">
-          {siteConfig.navItems.map((item, index) => item.children
+          {siteConfig.navItems.map((item: any, index) => item.children
             ? renderNavItem(item, index)
             : renderNavItem(item, index),
           )}
@@ -90,7 +90,7 @@ export function Navbar() {
 
       <NavbarMenu className="bg-black px-0">
         <div className="mx-5 pt-2 border-t border-white/30 flex flex-col flex-1">
-          {siteConfig.navMenuItems.map((item, index) => (
+          {siteConfig.navMenuItems.map((item: any, index) => (
             item.children
               ? (
                   <div className="border-t border-white/30 mt-[10px] pt-[10px]" key={`${item}-${index}`}>

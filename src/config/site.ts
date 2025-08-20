@@ -9,40 +9,40 @@ export type SiteConfig = typeof siteConfig
 // Explorer
 // DepInscriptions
 // Airdrop
-const moreItems = [
-  {
-    label: 'Swap Info',
-    href: 'https://swap-info.moonchain.com/',
-  },
-  {
-    label: 'NFT',
-    href: 'https://nft.moonchain.com/',
-  },
-  {
-    label: 'Mining',
-    href: 'https://miningv2.matchx.io/',
-  },
-  {
-    label: 'Disco Distro',
-    href: 'https://discodistro.vercel.app/',
-  },
-  {
-    label: 'Explorer',
-    href: 'https://explorer.moonchain.com/',
-  },
-  {
-    label: 'DepInscriptions',
-    href: 'https://depinscriptions.moonchain.com/',
-  },
-  {
-    label: 'Airdrop',
-    href: 'https://airdrop.moonchain.com/',
-  },
-]
+// const moreItems = [
+//   {
+//     label: 'Swap Info',
+//     href: 'https://swap-info.moonchain.com/',
+//   },
+//   {
+//     label: 'NFT',
+//     href: 'https://nft.moonchain.com/',
+//   },
+//   {
+//     label: 'Mining',
+//     href: 'https://miningv2.matchx.io/',
+//   },
+//   {
+//     label: 'Disco Distro',
+//     href: 'https://discodistro.vercel.app/',
+//   },
+//   {
+//     label: 'Explorer',
+//     href: 'https://explorer.moonchain.com/',
+//   },
+//   {
+//     label: 'DepInscriptions',
+//     href: 'https://depinscriptions.moonchain.com/',
+//   },
+//   {
+//     label: 'Airdrop',
+//     href: 'https://airdrop.moonchain.com/',
+//   },
+// ]
 
 export const siteConfig = {
-  name: `Moonchain, Ethereum's 1st Hardware Chain`,
-  description: 'Moonchain | Ethereum 3.0: Ethereum’s 1st Hardware Chain',
+  name: `The Value Layer for ZK`,
+  description: 'The Value Layer for ZK',
   navItems: [
     {
       label: 'IHO',
@@ -55,11 +55,12 @@ export const siteConfig = {
     {
       label: 'BRIDGE',
       href: 'https://jannowitz.moonchain.com/',
+      // children: []
     },
-    {
-      label: 'MORE',
-      children: moreItems,
-    },
+    // {
+    //   label: 'MORE',
+    //   children: moreItems,
+    // },
   ],
   navMenuItems: [
     {
@@ -68,16 +69,16 @@ export const siteConfig = {
     },
     {
       label: 'SWAP',
-      href: 'https://swap.moonchain.com/',
+      href: '',
     },
     {
       label: 'BRIDGE',
-      href: 'https://jannowitz.moonchain.com/',
+      href: '',
     },
-    {
-      label: 'MORE',
-      children: moreItems,
-    },
+    // {
+    //   label: 'MORE',
+    //   children: moreItems,
+    // },
   ],
   links: {
     github: 'https://github.com/heroui-inc/heroui',

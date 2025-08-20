@@ -33,8 +33,8 @@ export default function IndexPage() {
               <span className="text-sm">Ethereum 3.0</span>
             </div>
             <div className="text-5xl lg:text-[5rem] font-bold mb-10">
-              <p>ETHEREUM’S FIRST</p>
-              <p>HARDWARE CHAIN</p>
+              <p>The Value Layer for ZK</p>
+              {/* <p>HARDWARE CHAIN</p> */}
             </div>
             <div className="flex gap-3">
               <Button
@@ -108,7 +108,7 @@ export default function IndexPage() {
       <div className="container mx-auto flex flex-col justify-center items-center mb-[50px]">
         <div className="text-5xl font-bold mb-[12px]">ECOSYSTEM</div>
         <div className="text-xl text-center mb-[40px]">
-        Welcome to the Moonchain Ecosystem.A growing universe of partners, builders, and innovators.Together, we are building the unified future of decentralized AI.
+          Welcome to the Moonchain Ecosystem.A growing universe of partners, builders, and innovators.Together, we are building the unified future of decentralized AI.
         </div>
         <Button
           className="w-[160px] border-[#F8FAFC] hover:border-primary hover:text-primary"
