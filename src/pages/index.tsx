@@ -19,7 +19,7 @@ export default function IndexPage() {
     <layouts.home>
       <div className="h-screen relative flex flex-col">
         <div className="absolute top-0 left-0 w-full h-full bg-[linear-gradient(to_bottom,_black_0%,_transparent_20%,_transparent_80%,_black_100%)] z-[1]" />
-        <video src="/videos/home-video.mp4" autoPlay loop muted className="w-full h-full object-cover absolute top-0 left-0 z-0" />
+        <video src="/videos/home-video.mp4" playsInline muted preload="true" autoPlay loop className="w-full h-full object-cover absolute top-0 left-0 z-0" />
         <img src="/images/home/mark.png" alt="home/mark" className="w-full h-full object-cover absolute top-0 left-0" />
         <div className="mx-auto container relative z-10">
           <Head />
