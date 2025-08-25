@@ -1,3 +1,4 @@
+import type { PropsWithDetailedHTML } from '@hairy/react-lib'
 import { If, useStore } from '@hairy/react-lib'
 import { redirectTo } from '@hairy/utils'
 import { Button } from '@heroui/react'
@@ -132,6 +133,87 @@ export default function IndexPage() {
           </div>
         </Marquee>
       </div>
+      <div className="relative py-32 container mx-auto">
+        <div className="text-5xl font-bold mb-32 text-center">LISTED EXCHANGES</div>
+        <div className="mb-32">
+          <div className="border-b border-t h-32 border-default-200  hidden min-lg:flex">
+            <CursorHover>
+              <KucionIcon size={200} />
+            </CursorHover>
+            <DividerVerticalCubes />
+            <CursorHover>
+              <BinanceIcon size={220} />
+            </CursorHover>
+            <DividerVerticalCubes />
+            <CursorHover>
+              <GateIcon size={220} />
+            </CursorHover>
+          </div>
+          <div className="border-b border-t h-24 border-default-200 flex lg:hidden mx-4">
+            <CursorHover>
+              <KucionIcon size={100} />
+            </CursorHover>
+            <DividerVerticalCubes />
+            <CursorHover>
+              <BinanceIcon size={120} />
+            </CursorHover>
+          </div>
+          <div className="border-b border-t h-24 border-default-200 flex lg:hidden mx-4 -mt-[1px]">
+            <CursorHover>
+              <GateIcon size={100} />
+            </CursorHover>
+            <DividerVerticalCubes />
+            <CursorHover />
+          </div>
+        </div>
+
+        <div className="text-5xl font-bold mb-24 text-center">INVESTORS</div>
+        <div className="mb-24">
+          <div className="border-b border-t h-32 border-default-200  hidden min-lg:flex">
+            <CursorHover>
+              <OkxIcon size={230} />
+            </CursorHover>
+            <DividerVerticalCubes />
+            <CursorHover>
+              <ZhongXingIcon size={230} />
+            </CursorHover>
+            <DividerVerticalCubes />
+            <CursorHover>
+              <UobIcon size={230} />
+            </CursorHover>
+            <DividerVerticalCubes />
+            <CursorHover>
+              <JdiIcon size={230} />
+            </CursorHover>
+          </div>
+          <div className="border-b border-t h-24 border-default-200 flex lg:hidden mx-4">
+            <CursorHover>
+              <OkxIcon size={70} />
+            </CursorHover>
+            <DividerVerticalCubes />
+            <CursorHover>
+              <ZhongXingIcon size={100} />
+            </CursorHover>
+          </div>
+          <div className="border-b border-t h-24 border-default-200 flex lg:hidden mx-4 -mt-[1px]">
+            <CursorHover>
+              <UobIcon size={80} />
+            </CursorHover>
+            <DividerVerticalCubes />
+            <CursorHover>
+              <JdiIcon size={40} />
+            </CursorHover>
+          </div>
+        </div>
+      </div>
     </layouts.home>
+  )
+}
+
+function CursorHover({ children, ...props }: PropsWithDetailedHTML) {
+  return (
+    <div className={clsx('cursor-pointer flex-1 flex justify-center items-center hover:scale-110 transition-all duration-300 text-white opacity-50 hover:opacity-100', props.className)} {...props}>
+      {children}
+    </div>
   )
 }

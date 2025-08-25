@@ -6,22 +6,31 @@
 // biome-ignore lint: disable
 export {}
 declare global {
+  const BinanceIcon: typeof import('../src/components/icons')['BinanceIcon']
   const DiscordIcon: typeof import('../src/components/icons')['DiscordIcon']
+  const DividerVerticalCubes: typeof import('../src/components/divider-vertical-cubes')['DividerVerticalCubes']
+  const DividerVerticalCubesThree: typeof import('../src/components/divider-vertical-cubes-three')['DividerVerticalCubesThree']
+  const GateIcon: typeof import('../src/components/icons')['GateIcon']
   const GithubIcon: typeof import('../src/components/icons')['GithubIcon']
   const HeartFilledIcon: typeof import('../src/components/icons')['HeartFilledIcon']
   const HomeFloatProjectsUnline: typeof import('../src/ui/home-float-projects-unline')['HomeFloatProjectsUnline']
   const Icon: typeof import('@iconify/react')['Icon']
+  const JdiIcon: typeof import('../src/components/icons')['JdiIcon']
+  const KucionIcon: typeof import('../src/components/icons')['KucionIcon']
   const Logo: typeof import('../src/components/icons')['Logo']
   const MediumIcon: typeof import('../src/components/icons')['MediumIcon']
   const MoonFilledIcon: typeof import('../src/components/icons')['MoonFilledIcon']
   const Mouse: typeof import('../src/components/mouse')['Mouse']
   const Navbar: typeof import('../src/layouts/components/navbar')['Navbar']
+  const OkxIcon: typeof import('../src/components/icons')['OkxIcon']
   const SearchIcon: typeof import('../src/components/icons')['SearchIcon']
   const SunFilledIcon: typeof import('../src/components/icons')['SunFilledIcon']
   const TelegramIcon: typeof import('../src/components/icons')['TelegramIcon']
   const ThemeSwitch: typeof import('../src/layouts/components/theme-switch')['ThemeSwitch']
   const TwitterIcon: typeof import('../src/components/icons')['TwitterIcon']
+  const UobIcon: typeof import('../src/components/icons')['UobIcon']
   const YoutubeIcon: typeof import('../src/components/icons')['YoutubeIcon']
+  const ZhongXingIcon: typeof import('../src/components/icons')['ZhongXingIcon']
   const clsx: typeof import('clsx')['default']
   const createRef: typeof import('react')['createRef']
   const forwardRef: typeof import('react')['forwardRef']
@@ -49,4 +58,10 @@ declare global {
   const useState: typeof import('react')['useState']
   const useSyncExternalStore: typeof import('react')['useSyncExternalStore']
   const useTransition: typeof import('react')['useTransition']
+}
+// for type re-export
+declare global {
+  // @ts-ignore
+  export type { IconProps } from '../src/components/icons'
+  import('../src/components/icons')
 }
