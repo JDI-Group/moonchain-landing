@@ -52,6 +52,7 @@ export function Navbar() {
     <HeroUINavbar
       className={clsx('px-6 lg:px-0 transition-colors duration-800 bg-transparent backdrop-blur-none lg:h-[100px]', isMenuOpen && 'bg-black')}
       classNames={{ wrapper: 'px-0' }}
+      style={{ backdropFilter: 'inherit' }}
       maxWidth="full"
       position="static"
     >
@@ -65,7 +66,7 @@ export function Navbar() {
       </NavbarContent>
 
       <NavbarContent className="basis-1/5 sm:basis-full" justify="center">
-        <div className="hidden lg:flex gap-4 justify-start ml-2">
+        <div className="hidden lg:flex gap-4 justify-start ml-2 font-bold">
           {siteConfig.navItems.map((item: any, index) => item.children
             ? renderNavItem(item, index)
             : renderNavItem(item, index),

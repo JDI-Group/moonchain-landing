@@ -49,6 +49,10 @@ export const siteConfig = {
       href: '/',
     },
     {
+      label: 'APP',
+      href: '/app',
+    },
+    {
       label: 'SWAP',
       href: 'https://swap.moonchain.com/',
     },
