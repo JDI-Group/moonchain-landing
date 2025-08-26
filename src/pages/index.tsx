@@ -105,7 +105,7 @@ export default function IndexPage() {
       </div>
 
       <div className="relative py-32 container mx-auto">
-        <div className="text-5xl font-bold mb-32 text-center">LISTED EXCHANGES</div>
+        {/* <div className="text-5xl font-bold mb-32 text-center">LISTED EXCHANGES</div>
         <div className="mb-32">
           <div className="border-b border-t h-32 border-default-200  hidden min-lg:flex">
             <CursorHover>
@@ -136,7 +136,7 @@ export default function IndexPage() {
             <DividerVerticalCubes />
             <CursorHover />
           </div>
-        </div>
+        </div> */}
 
         <div className="text-5xl font-bold mb-24 text-center">INVESTORS</div>
         <div className="mb-24">
