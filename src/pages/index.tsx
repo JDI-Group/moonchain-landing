@@ -9,6 +9,7 @@ import { Navbar } from '@/layouts/components/navbar'
 
 export default function IndexPage() {
   const scroll = useWindowScroll()
+  const router = useRouter()
   async function onMouse() {
     window.scrollTo({ top: document.body.clientHeight / 3, behavior: 'smooth' })
   }
@@ -57,7 +58,7 @@ export default function IndexPage() {
                 className="flex-1 lg:flex-none lg:w-[120px] border-[#F8FAFC] hover:border-primary hover:text-primary"
                 radius="none"
                 variant="bordered"
-                onPress={() => redirectTo('https://mxc1usd.com/')}
+                onPress={() => router.push('app')}
               >
                 Wallet
               </Button>

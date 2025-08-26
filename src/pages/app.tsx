@@ -25,7 +25,7 @@ function Page() {
                 className="flex-1 text-black lg:flex-none lg:w-[144px] hover:bg-black hover:text-white gap-1"
                 radius="none"
                 variant="bordered"
-                onPress={() => redirectTo('https://github.com/JDI-Group')}
+                onPress={() => redirectTo('https://apps.apple.com/app/moonbase-the-mining-hub/id6736371768')}
               >
                 <Icon className="flex-shrink-0" fontSize={24} icon="formkit:apple" />
                 <div className="flex flex-col text-left">
@@ -38,7 +38,7 @@ function Page() {
                 className="flex-1 text-black lg:flex-none lg:w-[144px] hover:bg-black hover:text-white gap-1"
                 radius="none"
                 variant="bordered"
-                onPress={() => redirectTo('https://docs.mchain.ai/')}
+                onPress={() => redirectTo('https://play.google.com/store/apps/details?id=com.moonchain.app')}
               >
                 <Icon className="flex-shrink-0" fontSize={24} icon="basil:google-play-solid" />
                 <div className="flex flex-col text-left">
@@ -51,7 +51,7 @@ function Page() {
                 className="flex-1 text-black lg:flex-none lg:w-[144px] hover:bg-black hover:text-white"
                 radius="none"
                 variant="bordered"
-                onPress={() => redirectTo('https://mxc1usd.com/')}
+                onPress={() => redirectTo('https://github.com/MXCzkEVM/moonchain-wallet/releases/tag/250731150')}
               >
                 <Icon className="flex-shrink-0" fontSize={24} icon="bytesize:github" />
                 <div className="text-base leading-none font-bold">GITHUB</div>
