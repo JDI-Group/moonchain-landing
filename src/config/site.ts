@@ -46,7 +46,7 @@ export const siteConfig = {
   navItems: [
     {
       label: 'IHO',
-      href: '/',
+      href: 'https://iho.moonchain.com/products',
     },
     {
       label: 'APP',
