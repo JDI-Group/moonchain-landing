@@ -3,22 +3,22 @@ export function Footer() {
     {
       label: 'Twitter',
       icon: <TwitterIcon size={32} />,
-      href: '/',
+      href: 'https://x.com/Moonchain_com',
     },
     {
       label: 'Telegram',
       icon: <TelegramIcon size={32} />,
-      href: '/',
+      href: 'https://x.com/Moonchain_com',
     },
     {
       label: 'Youtube',
       icon: <YoutubeIcon size={32} />,
-      href: '/',
+      href: 'https://x.com/Moonchain_com',
     },
     {
       label: 'Medium',
       icon: <MediumIcon size={32} />,
-      href: '/',
+      href: 'https://x.com/Moonchain_com',
     },
   ]
   return (
@@ -30,7 +30,7 @@ export function Footer() {
         </div>
         <div className="flex gap-2">
           {links.map(link => (
-            <a className="bg-white/10 rounded-full p-1 hover:bg-primary hover:text-black transition-all duration-200" href={link.href} key={link.label}>
+            <a className="bg-white/10 rounded-full p-1 hover:bg-primary hover:text-black transition-all duration-200" href={link.href} key={link.label} target="_blank">
               {link.icon}
             </a>
           ))}
