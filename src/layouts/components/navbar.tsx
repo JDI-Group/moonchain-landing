@@ -24,7 +24,8 @@ export function Navbar() {
       <NavbarMenuItem className="py-3 leading-0" key={`${item}-${index}`}>
         <Link
           color={router.pathname === item.href ? 'primary' : 'foreground'}
-          href={item.href}
+          href={item.disabled ? '#' : item.href}
+          className={item.disabled ? 'cursor-not-allowed text-gray-500' : ''}
         >
           {item.label}
         </Link>
@@ -38,9 +39,10 @@ export function Navbar() {
           className={clsx(
             linkStyles({ color: 'foreground' }),
             'data-[active=true]:text-primary data-[active=true]:font-medium',
+            item.disabled ? 'cursor-not-allowed text-gray-500' : '',
           )}
           color="foreground"
-          href={item.href || ''}
+          href={item.disabled ? '#' : item.href}
         >
           {item.label}
         </NextLink>

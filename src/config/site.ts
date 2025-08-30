@@ -55,10 +55,12 @@ export const siteConfig = {
     {
       label: 'SWAP',
       href: '/',
+      disabled: true,
     },
     {
       label: 'BRIDGE',
       href: '/',
+      disabled: true,
       // children: []
     },
     // {
