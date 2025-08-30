@@ -46,7 +46,7 @@ function Page() {
                   <div className="text-base leading-none font-bold">Google Play</div>
                 </div>
               </Button>
-              <Button
+              {/* <Button
                 size="lg"
                 className="flex-1 text-black lg:flex-none lg:w-[144px] hover:bg-black hover:text-white"
                 radius="none"
@@ -56,7 +56,7 @@ function Page() {
                 <Icon className="flex-shrink-0" fontSize={24} icon="bytesize:github" />
                 <div className="text-base leading-none font-bold">GITHUB</div>
 
-              </Button>
+              </Button> */}
             </div>
           </div>
           <div className="flex-1 flex justify-center items-center relative max-lg:p-8 max-lg:pb-16">

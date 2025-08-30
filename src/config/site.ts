@@ -54,11 +54,11 @@ export const siteConfig = {
     },
     {
       label: 'SWAP',
-      href: 'https://swap.moonchain.com/',
+      href: '/',
     },
     {
       label: 'BRIDGE',
-      href: 'https://jannowitz.moonchain.com/',
+      href: '/',
       // children: []
     },
     // {
@@ -73,11 +73,11 @@ export const siteConfig = {
     },
     {
       label: 'SWAP',
-      href: '',
+      href: '/',
     },
     {
       label: 'BRIDGE',
-      href: '',
+      href: '/',
     },
     // {
     //   label: 'MORE',

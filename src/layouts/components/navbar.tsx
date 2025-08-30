@@ -79,9 +79,9 @@ export function Navbar() {
           <Button className="w-[120px] border-[#F8FAFC] hover:border-primary hover:text-primary" radius="none" variant="bordered" onPress={() => redirectTo('https://github.com/JDI-Group')}>
             Wallet
           </Button>
-          {/* <Button className="w-[120px]" radius="none" color="primary" onPress={() => redirectTo('https://docs.mchain.ai/')}>
+          <Button className="w-[120px]" radius="none" color="primary" onPress={() => redirectTo('https://docs.mchain.ai/')}>
             Github
-          </Button> */}
+          </Button>
         </NavbarItem>
       </NavbarContent>
 
@@ -102,7 +102,7 @@ export function Navbar() {
           ))}
         </div>
         <div className="mx-5 mb-8 flex gap-[10px]">
-          {/* <Button
+          <Button
             size="lg"
             className="flex-1 lg:flex-none lg:w-[120px]"
             radius="none"
@@ -110,7 +110,7 @@ export function Navbar() {
             onPress={() => redirectTo('https://github.com/JDI-Group')}
           >
             Github
-          </Button> */}
+          </Button>
           <Button
             size="lg"
             className="flex-1 border-[#F8FAFC] hover:border-primary hover:text-primary"

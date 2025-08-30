@@ -35,7 +35,7 @@ export default function IndexPage() {
               {/* <p>HARDWARE CHAIN</p> */}
             </div>
             <div className="flex gap-3">
-              {/* <Button
+              <Button
                 size="lg"
                 className="flex-1 lg:flex-none lg:w-[120px]"
                 radius="none"
@@ -43,7 +43,7 @@ export default function IndexPage() {
                 onPress={() => redirectTo('https://github.com/JDI-Group')}
               >
                 Github
-              </Button> */}
+              </Button>
               <Button
                 size="lg"
                 className="flex-1 lg:flex-none lg:w-[120px] border-[#F8FAFC] hover:border-primary hover:text-primary"
