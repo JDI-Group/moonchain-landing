@@ -92,6 +92,7 @@ export default function IndexPage() {
               size="lg"
               variant="bordered"
               radius="none"
+              onPress={() => redirectTo('https://iho.moonchain.com/products')}
             >
               See Details
             </Button>
