@@ -71,15 +71,22 @@ export const siteConfig = {
   navMenuItems: [
     {
       label: 'IHO',
-      href: '/',
+      href: 'https://iho.moonchain.com/products',
+    },
+    {
+      label: 'APP',
+      href: '/app',
     },
     {
       label: 'SWAP',
       href: '/',
+      disabled: true,
     },
     {
       label: 'BRIDGE',
       href: '/',
+      disabled: true,
+      // children: []
     },
     // {
     //   label: 'MORE',

@@ -17,7 +17,8 @@ export default function IndexPage() {
     <layouts.home>
       <div className="h-screen relative flex flex-col">
         <div className="absolute top-0 left-0 w-full h-full bg-[linear-gradient(to_bottom,_black_0%,_transparent_20%,_transparent_80%,_black_100%)] z-[1]" />
-        <video src="/videos/home-video.mp4" playsInline muted preload="true" autoPlay loop className="w-full h-full object-cover absolute top-0 left-0 z-0" />
+        <video src="/videos/home-video-phone.mp4" playsInline muted preload="true" autoPlay loop className="w-full h-full object-cover absolute top-0 left-0 z-0 md:hidden" />
+        <video src="/videos/home-video.mp4" playsInline muted preload="true" autoPlay loop className="w-full h-full object-cover absolute top-0 left-0 z-0 max-md:hidden" />
         <img src="/images/home/mark.png" alt="home/mark" className="w-full h-full object-cover absolute top-0 left-0" />
         <div className="mx-auto container relative z-10">
           <Head />
@@ -37,7 +38,7 @@ export default function IndexPage() {
             <div className="flex gap-3">
               <Button
                 size="lg"
-                className="flex-1 lg:flex-none lg:w-[120px]"
+                className="flex-1 lg:flex-none lg:w-[120px] font-bold hover:bg-[#C7E555] hover:opacity-100!"
                 radius="none"
                 color="primary"
                 onPress={() => redirectTo('https://github.com/JDI-Group')}
@@ -46,7 +47,7 @@ export default function IndexPage() {
               </Button>
               <Button
                 size="lg"
-                className="flex-1 lg:flex-none lg:w-[120px] border-[#F8FAFC] hover:border-primary hover:text-primary"
+                className="flex-1 lg:flex-none lg:w-[120px] border-[#F8FAFC] hover:border-primary hover:text-primary font-bold"
                 radius="none"
                 variant="bordered"
                 onPress={() => redirectTo('https://docs.mchain.ai/')}
@@ -55,7 +56,7 @@ export default function IndexPage() {
               </Button>
               <Button
                 size="lg"
-                className="flex-1 lg:flex-none lg:w-[120px] border-[#F8FAFC] hover:border-primary hover:text-primary"
+                className="flex-1 lg:flex-none lg:w-[120px] border-[#F8FAFC] hover:border-primary hover:text-primary font-bold"
                 radius="none"
                 variant="bordered"
                 onPress={() => router.push('app')}
@@ -71,7 +72,7 @@ export default function IndexPage() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.5 }}
-            className="absolute w-full flex justify-center bottom-20 z-10"
+            className="absolute w-full flex justify-center bottom-20 z-10 max-md:hidden"
           >
             <Mouse className="cursor-pointer" onClick={onMouse} />
           </motion.div>
@@ -80,15 +81,15 @@ export default function IndexPage() {
       <div className="h-screen relative flex flex-col justify-center md:justify-start md:flex-row px-6 lg:px-0">
         <div className="flex md:flex-1 lg:justify-end items-center">
           <div className="inline-flex flex-col">
-            <div className="text-4xl xxl:text-7xl font-bold mb-4">
+            <div className="text-[32px] xxl:text-[60px] font-bold mb-4">
               <p>INITIAL HARDWARE</p>
               <p>OFFERING (IHO)</p>
             </div>
-            <div className="text-xl md:text-2xl mb-8 md:mb-10">
+            <div className="text-[20px] md:text-[18px] mb-8 md:mb-10">
               The Future of Hardware Mining is FREE!
             </div>
             <Button
-              className="w-[160px] border-[#F8FAFC] hover:border-primary hover:text-primary"
+              className="w-[160px] border-[#F8FAFC] hover:border-primary hover:text-primary font-bold"
               size="lg"
               variant="bordered"
               radius="none"
@@ -105,7 +106,7 @@ export default function IndexPage() {
         </div>
       </div>
 
-      <div className="relative py-32 container mx-auto">
+      <div className="relative container mx-auto mt-[16px] mb-[70px] md:mb-[180px]">
         {/* <div className="text-5xl font-bold mb-32 text-center">LISTED EXCHANGES</div>
         <div className="mb-32">
           <div className="border-b border-t h-32 border-default-200  hidden min-lg:flex">
@@ -139,19 +140,20 @@ export default function IndexPage() {
           </div>
         </div> */}
 
-        <div className="text-5xl font-bold mb-24 text-center">INVESTORS</div>
-        <div className="mb-24">
+        <div className="text-[60px] font-bold mb-24 text-center max-md:hidden">INVESTORS</div>
+        <div className="text-[32px] font-bold mb-16 px-6">INVESTORS</div>
+        <div className="">
           <div className="border-b border-t h-32 border-default-200  hidden min-lg:flex">
             <CursorHover>
-              <OkxIcon size={230} />
+              <OkxIcon size={100} />
             </CursorHover>
             <DividerVerticalCubes />
             <CursorHover>
-              <ZhongXingIcon size={230} />
+              <ZhongXingIcon size={180} />
             </CursorHover>
             <DividerVerticalCubes />
             <CursorHover>
-              <UobIcon size={230} />
+              <UobIcon size={130} />
             </CursorHover>
             <DividerVerticalCubes />
             <CursorHover>
@@ -184,7 +186,7 @@ export default function IndexPage() {
 
 function CursorHover({ children, ...props }: PropsWithDetailedHTML) {
   return (
-    <div className={clsx('cursor-pointer flex-1 flex justify-center items-center hover:scale-110 transition-all duration-300 text-white opacity-50 hover:opacity-100', props.className)} {...props}>
+    <div className={clsx('cursor-pointer flex-1 flex justify-center items-center transition-all duration-300 text-white opacity-70 hover:opacity-100', props.className)} {...props}>
       {children}
     </div>
   )

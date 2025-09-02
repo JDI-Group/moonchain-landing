@@ -25,7 +25,10 @@ export function Navbar() {
         <Link
           color={router.pathname === item.href ? 'primary' : 'foreground'}
           href={item.disabled ? '#' : item.href}
-          className={item.disabled ? 'cursor-not-allowed text-gray-500' : ''}
+          className={clsx(
+            item.disabled ? 'cursor-not-allowed text-white/40' : '',
+            router.pathname === item.href && !item.disabled ? 'border-b border-primary' : '',
+          )}
         >
           {item.label}
         </Link>
@@ -39,7 +42,7 @@ export function Navbar() {
           className={clsx(
             linkStyles({ color: 'foreground' }),
             'data-[active=true]:text-primary data-[active=true]:font-medium',
-            item.disabled ? 'cursor-not-allowed text-gray-500' : '',
+            item.disabled ? 'cursor-not-allowed text-white/40' : '',
           )}
           color="foreground"
           href={item.disabled ? '#' : item.href}
@@ -52,7 +55,7 @@ export function Navbar() {
 
   return (
     <HeroUINavbar
-      className={clsx('px-6 lg:px-0 transition-colors duration-800 bg-transparent backdrop-blur-none lg:h-[100px]', isMenuOpen && 'bg-black')}
+      className={clsx('px-6 lg:px-0 transition-colors duration-800 bg-transparent backdrop-blur-none lg:h-[100px] relative z-10', isMenuOpen && 'bg-black')}
       classNames={{ wrapper: 'px-0' }}
       style={{ backdropFilter: 'inherit' }}
       maxWidth="full"
@@ -61,7 +64,7 @@ export function Navbar() {
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
         <NavbarBrand className="gap-3 max-w-fit">
           <NextLink className="flex justify-start items-center gap-3" href="/">
-            <img src="/images/logo.png" className="w-8 h-8 inline! flex-shrink-0" />
+            <img src="/images/logo-white.png" className="w-8 h-8 inline! flex-shrink-0" />
             <p className="font-bold font-spacex hidden lg:block">MOONCHAIN</p>
           </NextLink>
         </NavbarBrand>
@@ -81,14 +84,14 @@ export function Navbar() {
           <Button className="w-[120px] border-[#F8FAFC] hover:border-primary hover:text-primary" radius="none" variant="bordered" onPress={() => redirectTo('https://github.com/JDI-Group')}>
             Wallet
           </Button>
-          <Button className="w-[120px]" radius="none" color="primary" onPress={() => redirectTo('https://docs.mchain.ai/')}>
+          <Button className="w-[120px] hover:bg-[#C7E555] hover:opacity-100!" radius="none" color="primary" onPress={() => redirectTo('https://docs.mchain.ai/')}>
             Github
           </Button>
         </NavbarItem>
       </NavbarContent>
 
       <NavbarContent className="lg:hidden basis-1 pl-4" justify="end">
-        <NavbarMenuToggle onChange={setIsMenuOpen} />
+        <NavbarMenuToggle icon={isMenuOpen ? <CloseIcon className="flex-shrink-0" size={40} /> : <MenuIcon className="flex-shrink-0" size={40} />} onChange={setIsMenuOpen} />
       </NavbarContent>
 
       <NavbarMenu className="bg-black px-0">
