@@ -78,14 +78,14 @@ export default function IndexPage() {
           </motion.div>
         </If>
       </div>
-      <div className="h-screen relative flex flex-col justify-center md:justify-start md:flex-row px-6 lg:px-0">
+      <div className="min-h-screen py-2 relative flex flex-col justify-center md:justify-start md:flex-row px-6 lg:px-0">
         <div className="flex md:flex-1 lg:justify-end items-center">
           <div className="inline-flex flex-col">
-            <div className="text-[32px] xxl:text-[60px] font-bold mb-4">
+            <div className="text-[32px] lg:text-[60px] font-bold mb-4">
               <p>INITIAL HARDWARE</p>
               <p>OFFERING (IHO)</p>
             </div>
-            <div className="text-[20px] md:text-[18px] mb-8 md:mb-10">
+            <div className="text-[20px] lg:text-[18px] mb-8 md:mb-10">
               The Future of Hardware Mining is FREE!
             </div>
             <Button
@@ -99,7 +99,7 @@ export default function IndexPage() {
             </Button>
           </div>
         </div>
-        <div className="md:flex-1 md:py-20 flex items-center lg:mr-40">
+        <div className="md:flex-1  flex items-center xxl:mr-40">
           <div className="w-full">
             <HomeFloatProjectsUnline />
           </div>
@@ -140,8 +140,8 @@ export default function IndexPage() {
           </div>
         </div> */}
 
-        <div className="text-[60px] font-bold mb-24 text-center max-md:hidden">INVESTORS</div>
-        <div className="text-[32px] font-bold mb-16 px-6">INVESTORS</div>
+        <div className="text-[60px] font-bold mb-24 text-center max-lg:hidden">INVESTORS</div>
+        <div className="text-[32px] font-bold mb-16 px-6 lg:hidden">INVESTORS</div>
         <div className="">
           <div className="border-b border-t h-32 border-default-200  hidden min-lg:flex">
             <CursorHover>
