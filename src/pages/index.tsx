@@ -38,7 +38,7 @@ export default function IndexPage() {
             <div className="flex gap-3">
               <Button
                 size="lg"
-                className="flex-1 lg:flex-none lg:w-[120px] font-bold hover:bg-[#C7E555] hover:opacity-100!"
+                className="flex-1 lg:flex-none lg:w-[120px] font-bold uppercase hover:bg-[#C7E555] hover:opacity-100!"
                 radius="none"
                 color="primary"
                 onPress={() => redirectTo('https://github.com/JDI-Group')}
@@ -47,7 +47,7 @@ export default function IndexPage() {
               </Button>
               <Button
                 size="lg"
-                className="flex-1 lg:flex-none lg:w-[120px] border-[#F8FAFC] hover:border-primary hover:text-primary font-bold"
+                className="flex-1 lg:flex-none lg:w-[120px] border-[#F8FAFC] hover:border-primary hover:text-primary font-bold uppercase"
                 radius="none"
                 variant="bordered"
                 onPress={() => redirectTo('https://docs.mchain.ai/')}
@@ -56,7 +56,7 @@ export default function IndexPage() {
               </Button>
               <Button
                 size="lg"
-                className="flex-1 lg:flex-none lg:w-[120px] border-[#F8FAFC] hover:border-primary hover:text-primary font-bold"
+                className="flex-1 lg:flex-none lg:w-[120px] border-[#F8FAFC] hover:border-primary hover:text-primary font-bold uppercase"
                 radius="none"
                 variant="bordered"
                 onPress={() => router.push('app')}
@@ -81,15 +81,15 @@ export default function IndexPage() {
       <div className="min-h-screen py-2 relative flex flex-col justify-center md:justify-start md:flex-row px-6 lg:px-0">
         <div className="flex md:flex-1 lg:justify-end items-center">
           <div className="inline-flex flex-col">
-            <div className="text-[32px] lg:text-[60px] font-bold mb-4">
+            <div className="text-[32px] lg:text-[60px] font-bold mb-4 leading-none">
               <p>INITIAL HARDWARE</p>
               <p>OFFERING (IHO)</p>
             </div>
-            <div className="text-[20px] lg:text-[18px] mb-8 md:mb-10">
+            <div className="text-[14px] lg:text-[18px] mb-8 md:mb-10">
               The Future of Hardware Mining is FREE!
             </div>
             <Button
-              className="w-[160px] border-[#F8FAFC] hover:border-primary hover:text-primary font-bold"
+              className="w-[160px] border-[#F8FAFC] hover:border-primary hover:text-primary font-bold uppercase"
               size="lg"
               variant="bordered"
               radius="none"

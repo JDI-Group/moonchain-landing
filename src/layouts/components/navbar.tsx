@@ -26,6 +26,7 @@ export function Navbar() {
           color={router.pathname === item.href ? 'primary' : 'foreground'}
           href={item.disabled ? '#' : item.href}
           className={clsx(
+            'font-bold',
             item.disabled ? 'cursor-not-allowed text-white/40' : '',
             router.pathname === item.href && !item.disabled ? 'border-b border-primary' : '',
           )}
@@ -41,8 +42,9 @@ export function Navbar() {
         <NextLink
           className={clsx(
             linkStyles({ color: 'foreground' }),
-            'data-[active=true]:text-primary data-[active=true]:font-medium',
-            item.disabled ? 'cursor-not-allowed text-white/40' : '',
+            item.disabled && 'text-white/40',
+            !item.disabled && 'hover:text-[#D2F159]',
+            !item.disabled && router.pathname === item.href && 'text-[#D2F159]!',
           )}
           color="foreground"
           href={item.disabled ? '#' : item.href}
@@ -55,7 +57,7 @@ export function Navbar() {
 
   return (
     <HeroUINavbar
-      className={clsx('px-6 lg:px-0 transition-colors duration-800 bg-transparent backdrop-blur-none lg:h-[100px] relative z-10', isMenuOpen && 'bg-black')}
+      className={clsx('px-6 lg:px-0 transition-colors duration-800 bg-transparent backdrop-blur-none h-[90px] lg:h-[100px] relative z-10', isMenuOpen && 'bg-black')}
       classNames={{ wrapper: 'px-0' }}
       style={{ backdropFilter: 'inherit' }}
       maxWidth="full"
@@ -64,7 +66,7 @@ export function Navbar() {
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
         <NavbarBrand className="gap-3 max-w-fit">
           <NextLink className="flex justify-start items-center gap-3" href="/">
-            <img src="/images/logo-white.png" className="w-8 h-8 inline! flex-shrink-0" />
+            <img src="/images/logo-white.png" className="size-[40px] inline! flex-shrink-0" />
             <p className="font-bold font-spacex hidden lg:block">MOONCHAIN</p>
           </NextLink>
         </NavbarBrand>
@@ -81,10 +83,10 @@ export function Navbar() {
 
       <NavbarContent className="hidden lg:flex basis-1/5 sm:basis-full" justify="end">
         <NavbarItem className="hidden md:flex gap-2">
-          <Button className="w-[120px] border-[#F8FAFC] hover:border-primary hover:text-primary" radius="none" variant="bordered" onPress={() => redirectTo('https://github.com/JDI-Group')}>
+          <Button className="w-[120px] border-[#F8FAFC] hover:border-primary hover:text-primary font-bold uppercase" radius="none" variant="bordered" onPress={() => redirectTo('https://github.com/JDI-Group')}>
             Wallet
           </Button>
-          <Button className="w-[120px] hover:bg-[#C7E555] hover:opacity-100!" radius="none" color="primary" onPress={() => redirectTo('https://docs.mchain.ai/')}>
+          <Button className="w-[120px] hover:bg-[#C7E555] hover:opacity-100! font-bold uppercase" radius="none" color="primary" onPress={() => redirectTo('https://docs.mchain.ai/')}>
             Github
           </Button>
         </NavbarItem>
@@ -109,7 +111,7 @@ export function Navbar() {
         <div className="mx-5 mb-8 flex gap-[10px]">
           <Button
             size="lg"
-            className="flex-1 lg:flex-none lg:w-[120px]"
+            className="flex-1 lg:flex-none lg:w-[120px] font-bold uppercase"
             radius="none"
             color="primary"
             onPress={() => redirectTo('https://github.com/JDI-Group')}
@@ -118,7 +120,7 @@ export function Navbar() {
           </Button>
           <Button
             size="lg"
-            className="flex-1 border-[#F8FAFC] hover:border-primary hover:text-primary"
+            className="flex-1 border-[#F8FAFC] hover:border-primary hover:text-primary font-bold uppercase"
             radius="none"
             variant="bordered"
             onPress={() => redirectTo('https://docs.mchain.ai/')}
