@@ -57,7 +57,7 @@ function Page() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col mt-[80px] md:my-[140px] container mx-auto px-4">
+      <div className="flex flex-col my-[80px] md:my-[140px] container mx-auto px-4">
         <div className="text-[60px] font-bold mb-24 text-center max-md:hidden">FEATURES</div>
         <div className="text-[32px] font-bold mb-[32px] md:hidden">FEATURES</div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-[20px] w-full">
