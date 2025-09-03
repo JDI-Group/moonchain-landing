@@ -78,7 +78,7 @@ export default function IndexPage() {
           </motion.div>
         </If>
       </div>
-      <div className="min-h-screen py-2 relative flex flex-col justify-center md:justify-start md:flex-row px-6 lg:px-0">
+      <div className="py-9 relative flex flex-col justify-center md:justify-start md:flex-row px-6 lg:px-0">
         <div className="flex md:flex-1 lg:justify-end items-center">
           <div className="inline-flex flex-col">
             <div className="text-[32px] lg:text-[60px] font-bold mb-4 leading-none">
