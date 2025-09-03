@@ -79,7 +79,7 @@ export default function IndexPage() {
         </If>
       </div>
       <div className="py-9 relative flex flex-col justify-center md:justify-start md:flex-row px-6 lg:px-0">
-        <div className="flex md:flex-1 lg:justify-end items-center">
+        <div className="flex md:flex-1 lg:justify-end items-center md:-mr-20">
           <div className="inline-flex flex-col">
             <div className="text-[32px] lg:text-[60px] font-bold mb-4 leading-none">
               <p>INITIAL HARDWARE</p>
@@ -99,7 +99,7 @@ export default function IndexPage() {
             </Button>
           </div>
         </div>
-        <div className="md:flex-1  flex items-center xxl:mr-40">
+        <div className="md:flex-[1.2] flex items-center xxl:mr-40">
           <div className="w-full">
             <HomeFloatProjectsUnline />
           </div>
