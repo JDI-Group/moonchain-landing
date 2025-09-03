@@ -8,7 +8,7 @@ export function Footer() {
     {
       label: 'Telegram',
       icon: <TelegramIcon size={42} />,
-      href: 'https://x.com/Moonchain_com',
+      href: 'https://t.me/MCHain_Official',
     },
     {
       label: 'Youtube',
