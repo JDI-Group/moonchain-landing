@@ -53,6 +53,10 @@ export const siteConfig = {
       href: '/app',
     },
     {
+      label: 'EXPLORER',
+      href: 'https://explorer.mchain.ai',
+    },
+    {
       label: 'SWAP',
       href: '/',
       disabled: true,
@@ -63,6 +67,7 @@ export const siteConfig = {
       disabled: true,
       // children: []
     },
+  
     // {
     //   label: 'MORE',
     //   children: moreItems,
@@ -76,6 +81,10 @@ export const siteConfig = {
     {
       label: 'APP',
       href: '/app',
+    },
+    {
+      label: 'EXPLORER',
+      href: 'https://explorer.mchain.ai',
     },
     {
       label: 'SWAP',
