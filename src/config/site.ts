@@ -57,17 +57,14 @@ export const siteConfig = {
       href: 'https://explorer.mchain.ai',
     },
     {
+      label: 'BRIDGE',
+      href: 'https://bridge.mchain.ai',
+    },
+    {
       label: 'SWAP',
       href: '/',
       disabled: true,
     },
-    {
-      label: 'BRIDGE',
-      href: '/',
-      disabled: true,
-      // children: []
-    },
-
     // {
     //   label: 'MORE',
     //   children: moreItems,
@@ -87,15 +84,13 @@ export const siteConfig = {
       href: 'https://explorer.mchain.ai',
     },
     {
+      label: 'BRIDGE',
+      href: 'https://bridge.mchain.ai',
+    },
+    {
       label: 'SWAP',
       href: '/',
       disabled: true,
-    },
-    {
-      label: 'BRIDGE',
-      href: '/',
-      disabled: true,
-      // children: []
     },
     // {
     //   label: 'MORE',
