@@ -13,7 +13,7 @@ export function Footer() {
     {
       label: 'Youtube',
       icon: <YoutubeIcon size={42} />,
-      href: 'https://x.com/Moonchain_com',
+      href: 'https://www.youtube.com/@Moonchain_com/videos',
     },
     {
       label: 'Medium',
