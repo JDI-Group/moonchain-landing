@@ -18,7 +18,7 @@ export function Footer() {
     {
       label: 'Medium',
       icon: <MediumIcon size={42} />,
-      href: 'https://x.com/Moonchain_com',
+      href: 'https://medium.com/@MOONCHAIN_MCH',
     },
   ]
   return (

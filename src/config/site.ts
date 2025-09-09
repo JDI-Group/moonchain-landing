@@ -62,8 +62,7 @@ export const siteConfig = {
     },
     {
       label: 'SWAP',
-      href: '/',
-      disabled: true,
+      href: 'https://swap.mchain.ai',
     },
     // {
     //   label: 'MORE',
@@ -89,8 +88,7 @@ export const siteConfig = {
     },
     {
       label: 'SWAP',
-      href: '/',
-      disabled: true,
+      href: 'https://swap.mchain.ai',
     },
     // {
     //   label: 'MORE',
