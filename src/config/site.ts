@@ -67,7 +67,7 @@ export const siteConfig = {
     {
       label: 'NFT',
       href: 'https://nft.mchain.ai',
-    }
+    },
     // {
     //   label: 'MORE',
     //   children: moreItems,
