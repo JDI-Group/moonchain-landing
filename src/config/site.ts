@@ -64,6 +64,10 @@ export const siteConfig = {
       label: 'SWAP',
       href: 'https://swap.mchain.ai',
     },
+    {
+      label: 'NFT',
+      href: 'https://nft.mchain.ai',
+    }
     // {
     //   label: 'MORE',
     //   children: moreItems,
@@ -89,6 +93,10 @@ export const siteConfig = {
     {
       label: 'SWAP',
       href: 'https://swap.mchain.ai',
+    },
+    {
+      label: 'NFT',
+      href: 'https://nft.mchain.ai',
     },
     // {
     //   label: 'MORE',
