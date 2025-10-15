@@ -41,8 +41,8 @@ export type SiteConfig = typeof siteConfig
 // ]
 
 export const siteConfig = {
-  name: `The Value Layer for ZK`,
-  description: 'The Value Layer for ZK',
+  name: `The Value Layer for AI`,
+  description: 'The Value Layer for AI',
   navItems: [
     {
       label: 'IHO',

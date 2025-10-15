@@ -32,7 +32,7 @@ export default function IndexPage() {
               <span className="text-sm">Ethereum 3.0</span>
             </div>
             <div className="text-5xl lg:text-[5rem] font-bold mb-10">
-              <p>The Value Layer for ZK</p>
+              <p>The Value Layer for AI</p>
               {/* <p>HARDWARE CHAIN</p> */}
             </div>
             <div className="flex gap-3">
